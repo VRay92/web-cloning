@@ -1,0 +1,375 @@
+*{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding:0;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////  NAVBAR  /////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    padding-bottom: 200px;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+}
+
+li{
+    font-size: 19px;
+}
+
+button{
+    background-color: rgb(244,8,65);
+    border-radius: 30px;
+    width: 180px;
+    height: 47px;
+    border: none;
+    font-size: 16px;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/*//////////////////////////  HERO SECTION  ///////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+strong{
+    font-weight: 800;
+    font-style: bold;
+    font-size: 75px;
+}
+
+
+section{
+    display:block;
+    padding: 0px 160px 200px 160px
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width:800px;
+}
+
+#container > p {
+    padding-bottom: 50px;
+}
+
+#container > h3{
+    padding: 20px 0px;
+}
+
+section > img{
+    float: right;
+}
+
+div > img{
+    width:40px;
+    border-radius: 5px;
+}
+
+#social-media-icon{
+    display: flex;
+    width:190px;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined{
+    font-size:48px;
+    background-color: transparent;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/*//////////////////////////  MY SERVICES  ///////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+#description1{
+    padding:100px 0px 0px 160px
+}
+
+.card1{
+    box-shadow: 3px 2px 10px 10px rgb(35 35 35);
+    width: 430px;
+    padding: 30px 30px;
+    margin-top: 30px;
+    background-color: rgb(51 51 51);
+    border-radius:10px;
+}
+
+#flexbox1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px 0px 160px;
+}
+
+#flexbox1 > span,h3,p{
+    background-color: transparent;
+}
+
+#flexbox2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px 200px 160px;
+}
+
+#flexbox2 > span,h3,p,h4{
+    background-color: transparent;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/*////////////////////////////  MY RESUME  ////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+h3{
+    font-weight: bolder;
+}
+
+#description2{
+text-align: center;
+padding:100px 0px
+}
+
+#my-resume{
+    display:flex;
+    position: relative;
+    
+}
+
+.vl1 {
+    border-left: 6px solid white;
+    height: 73px;
+    background-color: transparent;
+    position: absolute;
+    left: 509px;
+    top: 344px;
+  }
+
+.vl2 {
+    border-left: 6px solid white;
+    height: 73px;
+    background-color: transparent;
+    position: absolute;
+    left: 509px;
+    top: 638px;
+  }
+
+.vl3 {
+    border-left: 6px solid white;
+    height: 73px;
+    background-color: transparent;
+    position: absolute;
+    top: 932px;
+    left: 509px;
+}
+
+#education{
+    width:550px
+}
+#circle1,#circle2,#circle3,#circle4,#circle5,#circle6{
+    position: absolute;
+    left: 500px;
+}
+
+#job-experience{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card2{
+    box-shadow: 3px 2px 10px 10px rgb(35 35 35);
+    width: 550px;
+    padding: 30px 30px;
+    margin-top: 30px;
+    background-color: rgb(51 51 51);
+    border-radius:10px;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/*///////////////////////  CONTACT WITH ME  //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+#description4{
+    text-align: center;
+    padding:100px 0px
+    }
+
+#map {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size:80px;
+  color: rgb(244,8,65)
+}
+
+#phone {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 150,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size:65px;
+    color: rgb(244,8,65)
+  }
+
+#mail {
+font-variation-settings:
+'FILL' 0,
+'wght' 150,
+'GRAD' 0,
+'opsz' 24;
+font-size:65px;
+color: rgb(244,8,65)
+} 
+
+#check {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 150,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size:65px;
+    color: rgb(244,8,65)
+    } 
+
+.card3{
+    box-shadow: 3px 2px 10px 10px rgb(35 35 35);
+    width: 350px;
+    align-items: center;
+    padding:30px;
+    background-color: rgb(51 51 51);
+    border-radius:10px;
+    height:130px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#contact-with-me{
+    padding:0px 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+#left-contact-with-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:870px;
+}
+
+#right-contact-with-me{
+    display: block;
+    margin-left: 50px;
+    margin-top: 15px;
+    padding: 50px;
+    box-shadow: 3px 2px 10px 10px rgb(35 35 35);
+    width: 1050px;
+    height: 750px;
+}
+
+.input-text{
+    width: 410px;
+    height: 55px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    padding-left: 20px;
+    margin: 20px;
+}
+
+#message-form{
+    width: 880px;
+    height: 450px;
+    background-color: rgb(27, 27, 27);
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+}
+#form{
+    display:flex
+}
+
+#submit-form{
+    background-color: rgb(27, 27, 27);
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    width:400px;
+    color: white;
+    font-size: larger;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/*//////////////////////////  MEDIA QUERY  //////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////*/
+
+/*Small screens*/
+@media screen and (max-width:640px){
+    .flexbox1,.flexbox2,#my-resume{
+    display:flex;
+    flex-direction: column;
+    }
+
+    #education > h2{
+        padding-top:50px
+    }
+}
+
+/* Medium screens - Tablet */
+@media screen and (min-width: 641px) and (max-width:1024px){
+    .flexbox1,.flexbox2,#my-resume{
+    display:flex;
+    flex-direction: column;
+    }
+
+    #education > h2{
+        padding-top:50px
+    }
+}
+
+/* Large screens - */
+@media screen and (min-width:1025px) and (max-width:1440px){
+    /*Type decoration here*/
+    .flexbox1,.flexbox2,#my-resume{
+    display:flex;
+    flex-direction: column;
+    }
+
+    #education > h2{
+        padding-top:50px
+    }
+}
+
+
+/*Gunakan order supaya tidak terbalik-balik saat masuk mobile platform*/
