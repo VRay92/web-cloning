@@ -1,11 +1,25 @@
 *{
-    background-color: rgb(40, 40, 40);
     color: white;
     padding:0;
     margin:0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(244,8,65) ;
+}
+
+.hr{
+    background-color: rgb(244,8,65); 
+    height: 2px; 
+    width:1600px; 
+    margin:auto
 }
 
 /*/////////////////////////////////////////////////////////////////////*/
@@ -30,6 +44,10 @@ li{
     font-size: 19px;
 }
 
+li:active{
+    transform:translateY(3px)
+}
+
 button{
     background-color: rgb(244,8,65);
     border-radius: 30px;
@@ -42,6 +60,10 @@ button{
 /* /////////////////////////////////////////////////////////////////// */
 /*//////////////////////////  HERO SECTION  ///////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////*/
+
+#logo{
+    width:200px;
+}
 
 strong{
     font-weight: 800;
@@ -74,9 +96,13 @@ section > img{
     float: right;
 }
 
-div > img{
+.icon{
     width:40px;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.icon:active{
+    transform:translateY(3px)
 }
 
 #social-media-icon{
@@ -89,6 +115,103 @@ div > img{
     font-size:48px;
     background-color: transparent;
 }
+
+#return-icon{
+    background-color:rgb(51 51 51);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 89%;
+    right: 30px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+#arrow{
+    width: 30px;
+    height: 22,5px;
+    background-color: transparent;
+    margin: auto;
+}
+
+#return-icon:active{
+    transform:translateY(3px)
+}
+/* /////////////////////////////////////////////////////////////////// */
+/*//////////////////////////  PORTFOLIO  ///////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+#description2{
+    padding:100px 0px 0px 0px;
+    text-align:center;
+}
+
+#projects{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px 0px 160px;
+  }
+  
+  .container-1,.container-2, .container-3 {
+    position: relative;
+    width: 490px;
+    height:294px;
+    box-shadow: 3px 2px 10px 10px rgb(35 35 35);
+    margin-top: 30px;
+    background-color: rgb(51 51 51);
+    border-radius:10px;
+  }
+  
+  .image-1, .image-2, .image-3 {
+    opacity: 1;
+    display: block;
+    object-fit: cover;
+    height: 294px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius:10px;
+  }
+  
+  .middle, .middle2,.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-1:hover .image-1, .container-2:hover .image-2,.container-3:hover .image-3 {
+    opacity: 0.3;
+  }
+  
+  .container-1:hover .middle, .container-2:hover .middle2, .container-3:hover .middle3 {
+    opacity: 1;
+  }
+  
+  .text, .text2, .text3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 16px 32px;
+    background-color:transparent;
+  }
+
+#flexbox3{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px 0px 160px;
+}
+
+.card5{
+width: 430px;
+padding: 30px 30px;
+margin-bottom: 100px;
+}
+
 
 /* /////////////////////////////////////////////////////////////////// */
 /*//////////////////////////  MY SERVICES  ///////////////////////////*/
@@ -135,7 +258,7 @@ h3{
     font-weight: bolder;
 }
 
-#description2{
+#description3{
 text-align: center;
 padding:100px 0px
 }
@@ -306,6 +429,7 @@ color: rgb(244,8,65)
     color: white;
     font-size: larger;
 }
+
 #form{
     display:flex
 }
@@ -321,6 +445,12 @@ color: rgb(244,8,65)
     color: white;
     font-size: larger;
 }
+
+#submit-form:active{
+    transform:translateY(3px)
+}
+
+
 /* ////////////////////////////////////////////////////////////////////// */
 
 footer {
@@ -335,8 +465,8 @@ footer {
     text-align: center;
 }
 
-footer> p,img,#social-media-icon{
-    padding:20px 0px
+footer> p,.icon,#social-media-icon{
+    padding:20px 2px
 } 
 
 /* ////////////////////////////////////////////////////////////////////// */
@@ -345,14 +475,41 @@ footer> p,img,#social-media-icon{
 
 /*Small screens*/
 @media screen and (max-width:640px){
+
+
+    .hr{
+        width: 50%;
+    }
     .flexbox1,.flexbox2,#my-resume{
     display:flex;
     flex-direction: column;
     }
 
+    section > img{
+        float: none
+    }
+
     #education > h2{
         padding-top:50px
     }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 0px;
+        padding-bottom: 200px;
+        align-items: center;
+    }
+
+    button{
+        background-color: rgb(244,8,65);
+        border-radius: 30px;
+        width: 180px;
+        height: 47px;
+        border: none;
+        font-size: 16px;
+    }
+    
 }
 
 /* Medium screens - Tablet */
@@ -362,14 +519,85 @@ footer> p,img,#social-media-icon{
     flex-direction: column;
     }
 
+    section > img{
+        float: none
+    }
+
     #education > h2{
         padding-top:50px
     }
 }
 
 /* Large screens - */
-@media screen and (min-width:1025px) and (max-width:1440px){
+@media screen and (max-width:1440px){
     /*Type decoration here*/
+    
+    nav{
+        justify-content: flex-start;
+        padding: 40px 0px;
+        padding-left:160px;
+        padding-bottom: 200px;
+        align-items: center;
+        gap:20px;
+    }
+    
+    .hr{
+        width: 65%;
+    }
+    
+    #hr1,#hr2,#hr3{
+        margin-top:100px;
+    }
+    ul {
+        gap:20px;
+    }
+
+    li {
+        font-size:15px;
+    }
+
+    #logo{
+        width:150px;
+    }
+
+    section{
+        padding-left:160px;
+    }
+
+    button{
+        background-color: rgb(244, 8, 65);
+        border-radius: 12px;
+        width: 90px;
+        height: 30px;
+        border: none;
+        font-size: 12px;
+    }
+    
+    section > img{
+        float: none
+    }
+
+
+    #description2{
+        padding:100px 0px 0px 160px;
+        text-align:left;
+    }
+
+    #description3{
+        padding:100px 0px 0px 160px;
+        text-align:left;
+    }
+
+    #description4{
+        padding:100px 0px 0px 160px;
+        text-align:left;
+    }
+
+    #shop-info,#calc-info,#stock-info{
+        display: none;
+    }
+
+    
     .flexbox1,.flexbox2,#my-resume{
     display:flex;
     flex-direction: column;
@@ -378,7 +606,65 @@ footer> p,img,#social-media-icon{
     #education > h2{
         padding-top:50px
     }
+
+    #container > p {
+        width: 688px;
+    }
+
+    #flexbox1{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 160px 0px 160px;
+    }
+
+    #flexbox2{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 160px 0px 160px;
+    }
+
+    #flexbox3{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 160px 0px 160px;
+    }
+
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-with-me{
+        padding:0px 220px;
+    }
+
+    #right-contact-with-me{
+        display: none;
+        flex-direction: column;
+        width:50%
+    }
+
+    #submit-form{
+        width:50%;
+        height:50px;
+        margin-left:265px;
+        color: white;
+        font-size: larger;
+    }
+
+    #message-form{
+        width: 50%;
+        height: 50%;
+    }
+
 }
 
+ 
 
 /*Gunakan order supaya tidak terbalik-balik saat masuk mobile platform*/
